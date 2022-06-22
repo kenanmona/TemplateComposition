@@ -1,0 +1,72 @@
+.header {
+  padding: 20px 0;
+  border-bottom: 1px solid $grayColor;
+  overflow: hidden;
+  .logo {
+    position: relative;
+    @media #{$minSmall} {
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
+    @media #{$minMedium} {
+      width: 30%;
+      float: $float-left;
+      text-align: $text-left; //// Reset The Text
+    }
+    h1 {
+      margin-bottom: 0;
+      margin-top: 10px;
+      color: #333;
+    }
+    p {
+      color: $grayColorFont;
+    }
+  }
+  .navbar {
+    transition: 0.5s;
+    overflow: hidden;
+    background-color: $redColor;
+    border-radius: 15px;
+    @media #{$minSmall} {
+      width: 100%;
+      float: none;
+      text-align: center;
+      margin-top: 40px;
+    }
+    @media #{$minMedium} {
+      float: $float-left;
+      width: 70%;
+      margin-top: 1em; //// Reset Margin
+    }
+    @media #{$maxMobile} {
+      display: none;
+    }
+    li {
+      width: 20%;
+      float: $float-left;
+      text-align: center;
+      font-size: 18px;
+      transition: 0.3s;
+      @media #{$maxMobile} {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: left;
+        padding: 0 10px;
+        &:hover {
+          padding: 0 25px;
+        }
+      }
+      a {
+        display: block;
+        padding: 20px 10px;
+        color: white;
+        text-decoration: none;
+        &:hover {
+          color: $grayColor;
+        }
+      }
+    }
+  }
+}

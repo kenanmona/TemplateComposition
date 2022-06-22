@@ -1,0 +1,141 @@
+/* Start Slider */
+.slider {
+  blockquote {
+    font: {
+      size: 20px;
+      weight: bold;
+      family: Arial;
+      style: italic;
+    }
+    line-height: 1.8;
+    text-align: center;
+    color: $grayColorFont;
+    width: 70%;
+    margin: 30px auto;
+  }
+  img {
+    max-width: 100%;
+  }
+  .bullets {
+    text-align: center;
+    li {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border: 3px solid $grayColor;
+      border-radius: 50%;
+      background-color: $grayColor;
+      cursor: pointer;
+      transition: 0.3s;
+      &.active,
+      &:hover {
+        border-color: $redColor;
+        background-color: white;
+      }
+    }
+  }
+}
+/* End Slider */
+/* Start Services */
+.services {
+  padding-bottom: 40px;
+  .container {
+    overflow: hidden;
+  }
+  .service-box {
+    @media #{$minMedium} {
+      margin: 0 1%;
+      width: 31%;
+      text-align: $float-left;
+      float: $float-left;
+    }
+    @media #{$maxMobile} {
+      margin-bottom: 40px;
+      i {
+        display: block;
+        margin-bottom: 15px;
+        padding-right: 0 !important;
+      }
+    }
+  }
+  .service-box {
+    h3 {
+      color: #333;
+      font-size: 22px;
+      letter-spacing: 2px;
+      i {
+        padding-right: 20px;
+      }
+    }
+    p {
+      color: $grayColorFont;
+      line-height: 1.6;
+    }
+    a {
+      color: $redColor;
+    }
+  }
+}
+/* End Services */
+/* Start Our Players */
+.our-players {
+  padding-bottom: 40px;
+  .container {
+    overflow: hidden;
+  }
+  .player-box {
+    margin-bottom: 40px;
+    text-align: center;
+    @media #{$minSmall} {
+      float: $float-left;
+      width: calc(100% / 2);
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    @media #{$minMedium} {
+      width: calc(100% / 3);
+      text-align: $text-left;
+    }
+    @media #{$minLarge} {
+      width: calc(100% / 5);
+    }
+    img {
+      width: 100%;
+    }
+    h3 {
+      margin: 10px 0;
+      color: #333;
+      span {
+        font-weight: normal;
+      }
+    }
+    p {
+      color: $grayColorFont;
+      line-height: 1.6;
+      margin: 0;
+    }
+    a {
+      color: $redColor;
+      margin-top: 10px;
+      display: block;
+    }
+  }
+}
+/* End Our Players */
+/* Section Lorem Ipsum Start */
+.lorem-ipsum {
+  margin-bottom: 40px;
+  overflow: hidden;
+  .image {
+    float: $float-left;
+    max-width: calc(96% / 3);
+    &:not(:last-of-type) {
+      margin-right: 2%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/* Section Lorem Ipsum End */
